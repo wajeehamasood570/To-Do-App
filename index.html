@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <title>To do App</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1> To-Do Application</h1>
+        <hr style="margin: 5px; ">
+        <div class="list">
+           
+                <input type="text" id="input" placeholder="Enter To do Item">
+                <div class="items">
+                <button class="delete" style="background-color: orange;" onclick="getValue()"><i class="fas fa-plus"></i></button>
+                <button class="edit" style="background-color: orange;" onclick="delAll()"><i class="far fa-trash-alt"></i></button>
+            </div>
+            <div>
+                <ul id="to-do-list">
+                </ul>
+            </div>
+        </div>
+</body>
+<script src="app.js"></script>
+
+</html>
