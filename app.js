@@ -3,6 +3,11 @@ var To_do =  document.getElementById("to-do-list")
 function getValue(){
     var input = document.getElementById("input");
     console.log(input.value);
+    if(input.value === ""){
+        alert("Please Fill out input field");
+        input.value = prompt("Enter Value");
+    }
+    
     var li = document.createElement("li");
     var liTxt = document.createTextNode(input.value);
     li.appendChild(liTxt)
